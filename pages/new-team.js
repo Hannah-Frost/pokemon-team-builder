@@ -1,11 +1,11 @@
 import Head from "next/head";
 import { Flex } from "@chakra-ui/react";
 
-export default function Home() {
+export default function NewTeam() {
   return (
     <Flex>
       <Head>
-        <title>Pokemon Team Builder</title>
+        <title>New Team</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
     </Flex>
