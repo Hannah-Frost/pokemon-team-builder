@@ -1,4 +1,4 @@
-import { ChakraProvider, Box, Flex, Grid, GridItem } from "@chakra-ui/react";
+import { ChakraProvider, Flex, Grid, GridItem } from "@chakra-ui/react";
 import theme from "../src/utils/customTheme.js";
 import { TopNav } from "../src/components/TopNav.tsx";
 import { SideNav } from "../src/components/SideNav.tsx";
