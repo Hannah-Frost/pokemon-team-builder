@@ -21,18 +21,6 @@ const NavItem = ({ title, href }: { title: string; href: string }) => {
   );
 };
 
-const PokeballDivider = () => (
-  <Flex
-    width="20%"
-    position="absolute"
-    justifyContent="flex-end"
-    transform="translateY(-25%)"
-  >
-    <Box rounded="full" bg="white" width={16} height={16}>
-      <Image src="/images/quickball.png" />
-    </Box>
-  </Flex>
-);
 
 export const TopNav = () => {
   return (
@@ -49,7 +37,6 @@ export const TopNav = () => {
         </Heading>
       </Flex>
       <Flex flexDir="row">
-        <PokeballDivider />
         <Flex
           bg="card"
           alignItems="center"
