@@ -1,9 +1,9 @@
 import { ChakraProvider, Flex, Grid, GridItem } from "@chakra-ui/react";
 import theme from "../src/utils/customTheme.js";
-import { TopNav } from "../src/components/TopNav.tsx";
+import { TopWelcome } from "../src/components/TopWelcome.tsx";
 import { SideNav } from "../src/components/SideNav.tsx";
 
-function MyApp({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
       <Grid
@@ -12,13 +12,13 @@ function MyApp({ Component, pageProps }) {
         templateColumns="repeat(5, 1fr)"
       >
         <GridItem colSpan={5}>
-          <TopNav />
+          <TopWelcome />
         </GridItem>
         <GridItem colSpan={1} rowSpan={1}>
           <SideNav />
         </GridItem>
         <GridItem colSpan={4} bg="bg">
-          <Flex p={12}>
+          <Flex width="100%" py={16} px={32}>
             <Component {...pageProps} />
           </Flex>
         </GridItem>
@@ -27,4 +27,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default App;

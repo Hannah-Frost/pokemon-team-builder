@@ -44,7 +44,7 @@ const NavItemContainer = ({
     position="relative"
   >
     <Flex p={8} flexDir="column">
-      <Heading size="lg" mb={6}>
+      <Heading size="md" mb={4}>
         {heading}
       </Heading>
       {children}
@@ -62,6 +62,9 @@ const NavItem = ({ title, href }: { title: string; href: string }) => {
       my={isSelected ? 2 : 0}
       fontSize="xl"
       whiteSpace="nowrap"
+      _hover={{
+        color: "primary",
+      }}
     >
       {isSelected && <SelectedHighlight />}
       <Link href={href}>
@@ -85,11 +88,11 @@ export const SideNav = () => {
         <NavItem title="Create new team" href="/new-team" />
         <NavItem title="View my teams" href="/my-teams" />
       </NavItemContainer>
-
-      <NavItemContainer heading="Other tools">
-        <NavItem title="View my teams" href="/my-teams" />
+      <NavItemContainer heading="Other teams">
+        <NavItem title="Shared teams" href="/other-teams" />
+      </NavItemContainer>
+      <NavItemContainer heading="Tools">
         <NavItem title="Memorise Types" href="/memorise-types" />
-        <NavItem title="View my teams" href="/my-teams" />
       </NavItemContainer>
     </Flex>
   );
