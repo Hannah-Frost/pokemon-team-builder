@@ -6,11 +6,10 @@ const HeadingContainer = () => (
   </Flex>
 );
 
-export const TopWelcome = ({ element }: { element: any }) => {
+export const TopWelcome = () => {
   return (
     <Flex
       flexDir="column"
-      ref={element}
       height={64}
       backgroundImage="linear-gradient(#92D0F3, #D3E8F4)"
       alignItems="center"

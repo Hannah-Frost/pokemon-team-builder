@@ -4,6 +4,8 @@ const colors = {
   card: "#353b45",
   bg: "#282c35",
   primary: "#92D0F3",
+  secondary: "#78BFE7",
+  tertiary: "#1D7BB0",
   normal: {
     400: "#C6C6A7",
     500: "#A8A878",
