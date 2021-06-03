@@ -6,7 +6,7 @@ const HeadingContainer = () => (
   </Flex>
 );
 
-export const TopWelcome = () => {
+export const WelcomeBanner = () => {
   return (
     <Flex
       flexDir="column"
