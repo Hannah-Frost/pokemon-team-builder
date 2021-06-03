@@ -1,4 +1,4 @@
-import { Flex, Heading, Image, Box, Text } from "@chakra-ui/react";
+import { Flex, Heading, Image } from "@chakra-ui/react";
 
 const HeadingContainer = () => (
   <Flex alignItems="center" m={8} zIndex={99}>
@@ -18,7 +18,7 @@ export const TopWelcome = () => {
       <Flex width="100%" justifyContent="space-between">
         <HeadingContainer />
         <Flex alignItems="center" flexDir="row">
-          <Heading>Placeholder</Heading>
+          <Image position="absolute" src="/images/waves.svg" />
         </Flex>
       </Flex>
       <Image
@@ -30,7 +30,7 @@ export const TopWelcome = () => {
       <Image
         position="absolute"
         src="/images/mareep_run_1.png"
-        _hover={{ src: "/images/mareep_run_2.svg" }}
+        _hover={{ src: "/images/mareep_run_2.png" }}
         top={115}
         left={470}
         height={32}

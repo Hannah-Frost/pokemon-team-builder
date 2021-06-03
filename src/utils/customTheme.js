@@ -1,5 +1,11 @@
 import { extendTheme } from "@chakra-ui/react";
 
+const fonts = {
+  body: "Tahoma, sans-serif",
+  heading: "Tahoma, sans-serif",
+  mono: "Tahoma, sans-serif",
+};
+
 const colors = {
   card: "#353b45",
   bg: "#282c35",
@@ -97,6 +103,6 @@ const colors = {
     600: "#9B6470",
   },
 };
-const theme = extendTheme({ colors });
+const theme = extendTheme({ colors, fonts });
 
 export default theme;

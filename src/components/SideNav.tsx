@@ -1,23 +1,23 @@
-import { Flex, Box, Image, Heading } from "@chakra-ui/react";
+import { Flex, Box, Text } from "@chakra-ui/react";
 import { DividerLine } from "./DisplayPanel.tsx";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-const PokeballDivider = () => (
-  <Flex
-    minWidth="45vh"
-    position="absolute"
-    justifyContent="flex-end"
-    transform="translateY(-30%)"
-    ml={8}
-  >
-    <Flex p={2} bg="card" rounded="full">
-      <Box rounded="full" width={20} height={20}>
-        <Image src="/images/quickball.png" />
-      </Box>
-    </Flex>
-  </Flex>
-);
+// const PokeballDivider = () => (
+//   <Flex
+//     minWidth="45vh"
+//     position="absolute"
+//     justifyContent="flex-end"
+//     transform="translateY(-30%)"
+//     ml={8}
+//   >
+//     <Flex p={2} bg="card" rounded="full">
+//       <Box rounded="full" width={20} height={20}>
+//         <Image src="/images/quickball.png" />
+//       </Box>
+//     </Flex>
+//   </Flex>
+// );
 
 const SelectedHighlight = () => (
   <Box
@@ -43,13 +43,15 @@ const NavItemContainer = ({
     flexDir="column"
     position="relative"
   >
-    <Flex p={8} flexDir="column">
-      <Heading size="md" mb={4}>
+    <Flex flexDir="column" px={6} pt={6}>
+      <Text fontSize="2xl" fontWeight="bold" mb={3}>
         {heading}
-      </Heading>
-      {children}
+      </Text>
+      <Flex flexDir="column" mb={6}>
+        {children}
+      </Flex>
+      <DividerLine />
     </Flex>
-    <DividerLine />
   </Flex>
 );
 
