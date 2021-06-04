@@ -1,0 +1,33 @@
+<svg width="14z2" height="256" viewBox="0 0 152 208" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .drop-1 {
+    animation: slideIn 3.3s forwards;
+    }
+
+    .drop-2 {
+    animation: slideIn 3s forwards;
+    }
+
+    .drop-3 {
+    animation: slideIn 2.7s forwards;
+    }
+
+    @keyframes slideIn {
+    0% {
+        transform: translateY(-400px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+    }
+</style>
+<ellipse class="drop-3" cx="9.5" cy="198.5" rx="9.5" ry="100.5" fill="#1D7BB0"/>
+<ellipse class="drop-3" cx="107" cy="207.5" rx="20" ry="100.5" fill="#1D7BB0"/>
+<ellipse class="drop-2" cx="137" cy="218.5" rx="20" ry="100.5" fill="#1D7BB0"/>
+<ellipse class="drop-1" cx="78.5" cy="219.5" rx="24.5" ry="100.5" fill="#1D7BB0"/>
+<ellipse class="drop-1" cx="63.5" cy="241.5" rx="9.5" ry="100.5" fill="#1D7BB0"/>
+<ellipse class="drop-2" cx="48.5" cy="203.5" rx="15.5" ry="100.5" fill="#1D7BB0"/>
+<ellipse class="drop-3" cx="32" cy="184.5" rx="20" ry="100.5" fill="#1D7BB0"/>
+<ellipse class="drop-2" cx="21.5" cy="229.5" rx="9.5" ry="100.5" fill="#1D7BB0"/>
+<rect class="drop-3" width="157" height="217" fill="#1D7BB0"/>
+</svg>

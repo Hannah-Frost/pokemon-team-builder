@@ -1,7 +1,7 @@
 <svg width="901" height="314" viewBox="25 -50 901 314" fill="none" xmlns="http://www.w3.org/2000/svg">
 <style>
     .mountain-background {
-    animation: slideIn 2.5s forwards;
+    animation: slideIn 2.2s forwards;
     }
 
     .mountain-foreground {
